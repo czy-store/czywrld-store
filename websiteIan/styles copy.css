@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: white; /* Light color for text */
+  }
+  
+  #backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    /* No opacity adjustment, keeping the video as is */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /** background: rgba(0, 0, 0, 0.6); /* Darker overlay to maintain the video visibility */
+    z-index: 1;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .logo {
+  width: 150px; /* Adjust this width as needed */
+  max-width: 100%; /* Ensures the logo doesn’t overflow on smaller screens */
+  height: auto; /* Maintains the aspect ratio */
+  margin-bottom: 20px; /* Space between logo and heading */
+}
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the screen without stretching */
+    z-index: -1; /* Keeps the video in the background */
+  }
+  
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    max-width: 900px;
+    /*padding: 20px;
+    border: 5px solid #333333; /* Dark gray border */
+    /*background-color: #1a1a1a; /* Dark background for the content area */
+    text-align: center;
+    /*box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White title */
+    text-shadow: 2px 2px #ff0000; /* Red shadow for a bit of 'pop' */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #d9d9d9; /* Light gray text for readability */
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    border: 3px solid #555555; /* Dark gray border */
+    background-color: #333333; /* Dark input background */
+    color: white; /* White input text */
+    width: 300px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff9900; /* Bright orange for contrast */
+    border: 3px solid #000000; /* Black border */
+    color: black;
+    cursor: pointer;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #ffcc00; /* Lighter orange on hover */
+  }
+  
+  .confirmation {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #00ff00; /* Bright green confirmation message */
+  }
+  
+  a {
+    color: #ff0000; /* Red links */
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+  
+  a:hover {
+    color: #00ff00; /* Green links on hover */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content {
+      width: 95%;
+      margin: 50px auto;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    input[type="email"] {
+      width: 80%;
+    }
+  }
+  
